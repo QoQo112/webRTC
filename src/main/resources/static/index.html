@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="./js/chat.js"></script>
+</head>
+<body>
+<button id="connector">Connect WebSocket</button>
+<button onclick="closeWebSocket()">Disconnect</button>
+<hr />
+<br />
+User Name:<input type="text" id="userId"/>
+Channel ID：<input id="channel" type="text" />
+Message: <input id="text" type="text" />
+<button onclick="send()">Send</button>
+<div id="message"></div>
+</body>
+
+
+<style>
+    #message{
+        margin-top:40px;
+        border:1px solid gray;
+        padding:20px;
+    }
+</style>
+</html>
